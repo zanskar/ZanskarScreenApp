@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">ZanskarScreenApp</string>
+    <string name="app_name">Business Card Zanskar Studio</string>
+    <string name="learn">Let us create your mobile app !</string>
+    <string name="street">Vendanger \n 49150 LE GUEDENIAU</string>
+    <string name="mail">contact@zanskarstudio.com</string>
+    <string name="web">www.zanskarstudio.com</string>
+    <string name="image">Office image</string>
+    <string name="logo">Zanskarstudio logo</string>
+    <string name="locationdesc">location</string>
+    <string name="maildesc">mail</string>
+    <string name="webdesc">web</string>
 </resources>

@@ -1,79 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/scroll"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.example.android.zanskarscreenapp.MainActivity">
 
-    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    <ImageView
+        android:id="@+id/brain_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/office" />
+
+    <TextView
+        android:id="@+id/learn_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:context="com.example.android.zanskarscreenapp.MainActivity">
+        style="@style/cursiveletters"
+        android:background="@color/turquoise"
+        android:contentDescription="@string/learn"
+        android:fontFamily="cursive"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:paddingTop="@dimen/pad"
+        android:paddingBottom="@dimen/pad"
+        android:text="@string/learn"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/pad"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_weight="0"
+        android:contentDescription="@string/logo"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo400" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pad"
+        android:layout_marginTop="@dimen/pad"
+        android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/office_image"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/officedesc"
-            android:layout_weight="1"
-            android:src="@drawable/office" />
-
-        <ImageView
-            android:id="@+id/logo_image"
-            android:layout_width="match_parent"
+            android:id="@+id/location_image"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin"
             android:layout_marginRight="@dimen/margin"
-            android:contentDescription="@string/logodesc"
-            android:scaleType="centerInside"
-            android:layout_weight="1"
-            android:src="@drawable/logo" />
+            android:layout_weight="0"
+            android:contentDescription="@string/locationdesc"
+            android:src="@drawable/locationicon50" />
 
         <TextView
-            android:id="@+id/title_text_view"
-            style="@style/blueletters"
-            android:layout_weight="1"
+            android:id="@+id/street_text_view"
+            style="@style/blackletters"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="@dimen/space"
-            android:layout_marginTop="@dimen/space"
-            android:layout_marginLeft="@dimen/bluespace"
-            android:layout_marginRight="@dimen/bluespace"
-            android:text="@string/title" />
+            android:layout_marginRight="@dimen/margin"
+            android:autoLink="map"
+            android:contentDescription="@string/street"
+            android:text="@string/street" />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/address_text_view"
-            style="@style/blackletters"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pad"
+        android:layout_marginTop="@dimen/pad"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mail_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin"
             android:layout_marginRight="@dimen/margin"
-            android:text="@string/address" />
+            android:layout_weight="0"
+            android:contentDescription="@string/maildesc"
+            android:src="@drawable/mailicon50" />
 
         <TextView
             android:id="@+id/mail_text_view"
-            style="@style/blackletters"
+            style="@style/blueletters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin"
+            android:autoLink="email"
+            android:contentDescription="@string/mail"
+            android:text="@string/mail"
+            android:textColorLink="@color/turquoise" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/pad"
+        android:layout_marginTop="@dimen/pad"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/web_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin"
             android:layout_marginRight="@dimen/margin"
-            android:layout_marginTop="@dimen/space"
-            android:autoLink="email"
-            android:text="@string/mail" />
+            android:layout_weight="0"
+            android:contentDescription="@string/webdesc"
+            android:src="@drawable/websiteicon50" />
+
 
         <TextView
-            android:id="@+id/web_text_view"
-            style="@style/blackletters"
+            android:id="@+id/link_text_view"
+            style="@style/blueletters"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space"
-            android:layout_marginLeft="@dimen/margin"
+            android:layout_gravity="center"
             android:layout_marginRight="@dimen/margin"
-            android:layout_marginTop="@dimen/space"
             android:autoLink="web"
-            android:text="@string/web" />
-
+            android:contentDescription="@string/web"
+            android:text="@string/web"
+            android:textColorLink="@color/turquoise" />
     </LinearLayout>
-</ScrollView>
 
+</LinearLayout>
