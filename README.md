@@ -14,4 +14,4 @@ This is the first project of the second phase of Google Developer Challenge Scho
 </ul>
 
 ## Screenshots
-<img src="/images/Screenshot_1.jpg" width="320" height="640">
+<img src="/images/screenshot_1.jpg" width="320" height="640">
