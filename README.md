@@ -1,7 +1,7 @@
 # ZanskarScreenApp
 
 ## Description
-This is the first project of the second phase of Google Developer Challenge Scholarship - Android Basics - 2017/2018, on order to pbtain a nanodegree. The subject was to create a business card of our choice. I created a business card for my own business, Zanskar Studio.
+This is the first project of the second phase of Google Developer Challenge Scholarship - Android Basics - 2017/2018, on order to obtain a nanodegree. The subject was to create a business card of our choice. I created a business card for my own business, Zanskar Studio.
 
 ## Technical points
 <ul>
